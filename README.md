@@ -1,70 +1,101 @@
-# Getting Started with Create React App
+# Getting Started with SSA Admin
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+The SSA Admin panel is a powerful dashboard designed for managing users, configurations, knowledge base resources, and billing tasks. This guide will walk you through the components, routes, and features to help you get started.
 
-## Available Scripts
+## Live Demo
 
-In the project directory, you can run:
+Access the SSA Admin dashboard using the following link and test credentials:
 
-### `npm start`
+- **Link**: [https://dashboard.supersmartagents.com/](https://dashboard.supersmartagents.com/)
+- **Email**: `test@gmail.com`
+- **Password**: `test`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Components Overview
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+The Admin component includes routes for both Admin and User roles with distinct functionalities. Below is a breakdown of the features and components:
 
-### `npm test`
+### Admin Role Features
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+The following routes and components are accessible when logged in as an Admin:
 
-### `npm run build`
+- **Dashboard**: Overview panel  
+  _Component_: `Board`
+- **Todo List**: Manage tasks and todos  
+  _Component_: `Todo`
+- **Roadmap**: Visualize upcoming plans  
+  _Component_: `Roadmap`
+- **Notice Board**: Broadcast important notices  
+  _Component_: `Notice`
+- **Play AI**: AI configurations and tools  
+  _Component_: `Playai`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### User Role Features
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+The following routes are accessible when logged in as a User:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- **Panel**: User-specific dashboard  
+  _Component_: `Panel`
+- **Billing**: View and manage billing  
+  _Component_: `Billings`
+- **Submit Ticket**: Submit support tickets  
+  _Component_: `Posticket`
+- **Thank You**: Submission confirmation page  
+  _Component_: `ThankYouComponent`
+- **Lifetime Access**: Manage lifetime bot access  
+  _Component_: `Lifetime`
 
-### `npm run eject`
+### Configurations
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- **Test Bot**: Set up test bots  
+  _Component_: `Testbot`
+- **Voice Agents**: Manage voice agents  
+  _Component_: `VoiceAgents`
+- **API Key Form**: Add or update API keys  
+  _Component_: `ApiKeyForm`
+- **DNS Setup**: Configure DNS settings  
+  _Component_: `DnsSetupForm`
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Knowledge Base
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+The knowledge base consists of informational resources for users:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- **Introduction**: General introduction  
+  _Component_: `Introductions`
+- **Features**: Key features of the system  
+  _Component_: `Features`
+- **Getting Started**: User onboarding guide  
+  _Component_: `GettingStarted`
+- **Industries**: Use cases by industries  
+  _Component_: `Industries`
+- **Best Practices**: Tips and recommendations  
+  _Component_: `BestPractices`
+- **Troubleshooting**: Solutions for common issues  
+  _Component_: `Troubleshooting`
+- **Security**: Privacy and security guidelines  
+  _Component_: `Security`
+- **Support**: Access support resources  
+  _Component_: `Support`
 
-## Learn More
+## Key Libraries Used
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- **React Router**: For routing and navigation.
+- **React Toastify**: For toast notifications.
+- **Context API**: State management for user data.
+- **Custom Hooks**: Includes `useProduktlyScript` for script integration.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## How to Run Locally
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/gmatsss/SSA-admin.git
+   cd SSA-admin
+   ```
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+3. Run the project:
+   ```bash
+   npm start
+   ```
+4. Visit [http://localhost:3000](http://localhost:3000) in your browser.
