@@ -1,0 +1,59 @@
+.submenu {
+  background-color: #fff;
+  font-size: 12px;
+}
+
+.submenu-item {
+  display: flex;
+  align-items: center; /* Ensure text and arrow are aligned */
+  height: 22px;
+  text-decoration: none;
+  color: #333;
+  margin-top: 3px;
+  margin-left: 70px; /* Default margin */
+  position: relative; /* Required for positioning the arrow */
+  padding-left: 10px; /* Adds padding to align the label and the arrow */
+}
+
+.submenu-item:hover,
+.submenu-item.active {
+  font-weight: 700;
+  color: #db4f7c;
+}
+
+.submenu-item p {
+  margin: 0; /* Remove default margin from the p tag */
+  padding: 0; /* Remove padding to align text perfectly */
+}
+
+.submenu-item.active::before {
+  content: "→"; /* Adds an arrow */
+  font-size: 12px;
+  color: #db4f7c;
+  position: absolute;
+  left: -15px; /* Adjusts the position of the arrow */
+  top: 50%;
+  transform: translateY(-50%); /* Vertically center the arrow */
+}
+
+.submenu-item span {
+  margin-left: 10px;
+}
+
+.submenu-item.active span {
+  font-weight: bold;
+}
+
+.sidebar-container.collapsed .submenu {
+  font-size: 9px;
+}
+
+.sidebar-container.collapsed .submenu-item {
+  margin-left: 5px;
+  height: 27px;
+  margin-top: 10px;
+}
+
+.sidebar-container.collapsed .submenu-item:hover {
+  color: #db4f7c;
+}

@@ -1,0 +1,412 @@
+.sidebar-container {
+  display: flex;
+  align-items: start;
+  font-family: "Roboto", sans-serif;
+  position: relative;
+  width: 320px;
+  transition: width 0.3s ease-in-out;
+  padding: 20px;
+}
+
+.sidebar-container.collapsed {
+  width: 120px;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  height: 93vh;
+  width: 320px;
+  background-color: #0d1440;
+  color: white;
+  transition: width 0.3s ease-in-out;
+  overflow-x: hidden;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  margin-left: 10px;
+  margin-top: 15px;
+}
+
+.sidebar.collapsed {
+  width: 120px;
+}
+
+.sidebar-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.logo-sidebar {
+  width: 200px;
+  transition: width 0.3s ease, height 0.3s ease;
+}
+
+.sidebar-container.collapsed .logo-sidebar {
+  width: 80px;
+  height: auto;
+  transition: width 0.3s ease, height 0.3s ease;
+}
+
+.sidebar-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  padding-top: 20px;
+  width: 100%;
+}
+
+.sidebar-item {
+  display: flex;
+  align-items: center;
+  height: 40px;
+  text-decoration: none;
+}
+
+.img-container {
+  flex: 0 0 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  height: 100%;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  position: relative; /* Ensure that the ::before element is positioned correctly */
+  overflow: hidden; /* Prevent overflow of the animated background */
+}
+
+.sidebar-item-text-container {
+  flex: 0 0 75%;
+  display: flex;
+  align-items: center;
+  padding: 7px;
+  font-weight: 700;
+  color: white;
+  font-size: 18px;
+}
+
+.sidebar-item:hover .img-container,
+.sidebar-item.active .img-container {
+  background-color: transparent; /* Remove direct background color */
+}
+
+.sidebar-item .img-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #db4f7c; /* The desired hover color */
+  transition: width 0.5s ease; /* Transition effect for smooth animation */
+  z-index: 0; /* Place the animated background behind the content */
+}
+
+.sidebar-item:hover .img-container::before,
+.sidebar-item.active .img-container::before {
+  width: 100%; /* Animate to full width on hover */
+}
+
+/* Ensure the icon is above the animated background */
+.sidebar-item .img-container img {
+  position: relative;
+  z-index: 1;
+}
+
+.sidebar-item:hover .sidebar-item-text-container,
+.sidebar-item.active .sidebar-item-text-container {
+  color: black;
+}
+
+.sidebar-item:hover,
+.sidebar-item.active {
+  background-color: rgb(255, 255, 255);
+}
+
+.sidebar-item img {
+  max-width: 100%;
+  height: auto;
+}
+
+.tooltip-sidebar {
+  display: none;
+}
+
+.sidebar-item:hover .tooltip-sidebar {
+  display: block;
+  position: absolute;
+  background-color: #000;
+  color: #fff;
+  padding: 5px;
+  border-radius: 4px;
+  font-size: 12px;
+  margin-left: 5px;
+}
+
+.icon-invert {
+  width: 45%;
+  height: auto;
+}
+
+.home-invert {
+  width: 45%;
+  height: auto;
+  filter: invert(100%);
+}
+
+.badge {
+  background: red;
+  border-radius: 50%;
+  padding: 4px 8px;
+  font-size: 14px;
+  margin-left: auto;
+}
+
+.collapsed-badge {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  width: 16px;
+  height: 16px;
+  font-size: 10px;
+  padding: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tooltip-sidebar {
+  position: absolute;
+  left: 100%;
+  margin-left: 10px;
+  background: #000;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  white-space: nowrap;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.sidebar-toggle-button {
+  position: absolute;
+  top: 30px;
+  right: -10px;
+  background-color: #ff335b;
+  color: #ffffff;
+  border: none;
+  font-size: 16px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, right 0.3s ease;
+}
+
+.sidebar-toggle-button:hover {
+  background-color: #ffffff;
+  color: #ff335b;
+}
+
+@media (max-width: 768px) {
+  .sidebar-container {
+    width: 80px;
+  }
+
+  .sidebar-container.expanded {
+    width: 250px;
+  }
+
+  .sidebar-button {
+    display: none;
+  }
+}
+
+.sidebar-container.collapsed .sidebar-item {
+  justify-content: center;
+}
+
+.sidebar-container.collapsed .img-container {
+  flex: 1;
+  justify-content: center;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+.sidebar-container.collapsed .sidebar-item-text-container {
+  display: none;
+}
+
+.sidebar-special-offer-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px; /* Reduced from 40px */
+  position: relative;
+}
+
+.settings-icon {
+  height: 70px;
+  margin-bottom: -110px;
+  z-index: 0;
+}
+
+.arrow-icon {
+  width: 50px;
+  height: auto;
+  z-index: 1;
+  margin-bottom: 10px;
+}
+
+.sidebar-special-offer {
+  background-color: #ff335b;
+  border-radius: 15px; /* Reduced from 20px */
+  padding: 5px; /* Reduced from 10px */
+  color: white;
+  text-align: center;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2); /* Adjusted shadow size */
+  width: 65%; /* Reduced from 80% */
+  margin-top: -10px; /* Adjusted from -10px */
+  margin-bottom: 20px; /* Adjusted from -10px */
+}
+
+.offer-details {
+  padding-top: 10px; /* Reduced from 20px */
+}
+
+.offer-text {
+  font-size: 16px; /* Reduced from 18px */
+  font-weight: bold;
+  margin: 3px 0; /* Reduced from 5px 0 */
+}
+
+.offer-date {
+  font-size: 12px; /* Reduced from 14px */
+  margin: 5px 0; /* Reduced from 10px 0 */
+}
+
+.offer-button {
+  background-color: white;
+  color: #ff335b;
+  font-size: 14px; /* Reduced from 16px */
+  font-weight: bold;
+  padding: 8px 12px; /* Reduced from 10px 15px */
+  border: none;
+  border-radius: 8px; /* Reduced from 10px */
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.offer-button:hover {
+  background-color: #ff6680;
+  color: white;
+}
+
+.sidebar-container.collapsed .sidebar-special-offer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 8px; /* Reduced from 10px */
+  width: 100%;
+}
+
+.sidebar-container.collapsed .offer-text {
+  display: block;
+  overflow: hidden;
+  white-space: normal;
+  text-align: center;
+  font-size: 10px; /* Reduced from 12px */
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar-container.collapsed .offer-details {
+  padding-top: 0;
+}
+
+.sidebar-container.collapsed .offer-button,
+.sidebar-container.collapsed .offer-date {
+  display: none;
+}
+
+.logout-button {
+  background-color: transparent;
+  border: none;
+  color: white;
+  text-align: left;
+  font-size: 16px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  width: 100%;
+  cursor: pointer;
+  border-radius: 20px;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+  justify-content: flex-start;
+}
+
+.logout-button img {
+  margin-right: 10px;
+  width: 16px;
+  height: auto;
+}
+
+.logout-button span {
+  flex: 1;
+  margin-left: 20px;
+}
+
+.logout-button:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.sidebar-item.logout-button {
+  padding: 10px 15px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  background-color: #0b1442;
+  margin-left: 20px;
+}
+
+/* Center the icon when the sidebar is collapsed */
+.sidebar-container.collapsed .logout-button {
+  justify-content: start; /* Center the content */
+}
+
+.sidebar-container.collapsed .logout-button img {
+  margin-right: 0; /* Remove margin to center the icon */
+}
+
+.sidebar-container.collapsed .logout-button span {
+  display: none; /* Hide the text when collapsed */
+}
+
+.submenuu {
+  background-color: #fff;
+}
+
+/* Adjust for smaller screens */
+@media (max-width: 1024px) {
+  .sidebar {
+    height: 120vh; /* Ensure full height on smaller screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    height: 120vh; /* Ensure full height on smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .sidebar {
+    height: 120vh; /* Ensure full height on smallest screens */
+  }
+}

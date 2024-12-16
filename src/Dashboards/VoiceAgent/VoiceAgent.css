@@ -1,0 +1,93 @@
+.voice-agents-container {
+  padding: 30px;
+  border-radius: 10px;
+  max-height: 600px; /* Adjust this value as needed */
+  overflow-y: auto; /* Enable vertical scrolling */
+  background-color: #f9f9f9; /* Optional: Add a background color for contrast */
+}
+
+.voice-agents-title {
+  font-size: 28px;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #007bff;
+  padding-bottom: 10px;
+}
+
+.minutes-summary {
+  margin-bottom: 25px;
+  display: flex;
+  justify-content: space-between;
+  font-weight: 600;
+  font-size: 18px;
+  color: #555;
+}
+
+.edit-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  margin-bottom: 25px;
+  cursor: pointer;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.edit-button:hover {
+  background-color: #0056b3;
+}
+
+.agent-detail-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.agent-detail {
+  margin-bottom: 20px;
+  font-size: 16px;
+  color: #444;
+}
+
+.agent-detail strong {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.agent-detail input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background-color: #fafafa;
+  transition: border-color 0.3s ease;
+}
+
+.agent-detail input:focus {
+  border-color: #007bff;
+}
+
+.agent-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.agent-item {
+  margin-bottom: 25px;
+  padding: 20px;
+  border: 1px solid #e1e1e1;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.agent-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}

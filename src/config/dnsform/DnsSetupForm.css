@@ -1,0 +1,139 @@
+.dns-setup-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 30px;
+}
+
+.domain-container,
+.dns-container {
+  width: 100%;
+  max-width: 1500px; /* Ensure both containers are the same width */
+}
+
+.dns-container {
+  background-color: #ffffff;
+  border-radius: 0 0 15px 15px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  border: 1px solid #d0d0d0;
+}
+
+.title-holder {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.title-holder .title {
+  font-size: 22px;
+  font-weight: bold;
+  color: #000;
+  margin: 0;
+}
+
+.title-holder .help-icon {
+  margin-left: 8px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.dns-container .dns-record {
+  margin-bottom: 16px;
+
+  padding-top: 16px;
+}
+
+.dns-container .dns-record:first-child {
+  border-top: none;
+  padding-top: 0;
+}
+
+.dns-container .record-header h6 {
+  font-size: 16px;
+  font-weight: bold;
+  color: #001f54;
+  margin: 0;
+}
+
+.dns-container .help-button {
+  background-color: transparent;
+  border: none;
+  font-size: 16px;
+  color: #001f54;
+  cursor: pointer;
+}
+
+.tooltips-container {
+  position: relative;
+  display: inline-block;
+}
+
+.helps-button {
+  background-color: #4c4d62;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.tooltips-text {
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  width: 300px; /* Reduced width */
+  background-color: #a0a0a0;
+  color: #fff;
+  text-align: left;
+  padding: 8px; /* Reduced padding to decrease height */
+  border-radius: 5px;
+  position: absolute;
+
+  transform: translateX(-50%); /* Center the tooltip horizontally */
+  z-index: 1;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  pointer-events: none; /* Ensure no pointer events when hidden */
+}
+
+/* Responsive Design for screens smaller than 1024px */
+@media (max-width: 1024px) {
+  .tooltips-text {
+    width: 500px; /* Adjust width for smaller screens */
+    font-size: 14px; /* Adjust font size */
+    padding: 6px; /* Reduce padding for a more compact layout */
+    top: 0px; /* Adjust position above the button */
+    left: 160px;
+  }
+}
+
+@media (max-width: 768px) {
+  .tooltips-text {
+    width: 400px; /* Further reduce width for mobile devices */
+    font-size: 13px; /* Reduce font size for better readability */
+    left: 140px;
+  }
+}
+
+.helps-button:focus + .tooltips-text {
+  visibility: visible;
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.tooltips-container ul {
+  padding-left: 20px;
+}
+
+.tooltips-container ul li {
+  list-style-type: disc;
+  margin-bottom: 5px;
+}
+
+.helps-button:focus {
+  outline: none; /* Remove the button's default outline */
+}

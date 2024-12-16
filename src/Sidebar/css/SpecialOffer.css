@@ -1,0 +1,97 @@
+/* SpecialOffer.css */
+.sidebar-special-offer-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  position: relative;
+}
+
+.settings-icon {
+  height: 70px;
+  margin-bottom: -110px;
+  z-index: 0;
+}
+
+.arrow-icon {
+  width: 50px;
+  height: auto;
+  z-index: 1;
+  margin-bottom: 13px;
+}
+
+.sidebar-special-offer {
+  background-color: #df3f68;
+  border-radius: 15px;
+  padding: 15px;
+  color: white;
+  text-align: center;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+  width: 75%;
+  margin-top: -10px;
+  margin-bottom: 8px;
+}
+
+.offer-details {
+  padding-top: 10px;
+}
+
+.offer-text {
+  font-size: 14px;
+  font-weight: bold;
+  margin: 3px 0;
+}
+
+.offer-date {
+  font-size: 12px;
+  margin: 5px 0;
+}
+
+.offer-button {
+  background-color: white;
+  color: #00ccff;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.offer-button:hover {
+  background-color: #ff6680;
+  color: white;
+}
+
+.sidebar-container.collapsed .sidebar-special-offer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+  width: 100%;
+}
+
+.sidebar-container.collapsed .offer-text {
+  display: block;
+  overflow: hidden;
+  white-space: normal;
+  text-align: center;
+  font-size: 10px;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar-container.collapsed .sidebar-special-offer-wrapper {
+  padding: 12px;
+}
+
+.sidebar-container.collapsed .offer-details {
+  padding-top: 0;
+}
+
+.sidebar-container.collapsed .offer-button,
+.sidebar-container.collapsed .offer-date {
+  display: none;
+}

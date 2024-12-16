@@ -1,0 +1,71 @@
+.billings-container {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.paymentform-container {
+  display: flex;
+  justify-content: center; /* To ensure spacing between form and verification */
+  gap: 20px;
+}
+
+.paymentform {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+}
+
+.channelform {
+  display: flex;
+  flex-direction: column;
+}
+
+.verification-code {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.code-text {
+  font-size: 18px;
+  color: #092a51;
+  cursor: pointer;
+}
+
+.verification-button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.verification-button {
+  background-color: #092a51;
+  color: #fff;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 60%;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.verification-button:disabled {
+  background-color: #ccc; /* Gray out the button when disabled */
+  cursor: not-allowed;
+}
+
+.verification-button:hover {
+  background-color: #073049; /* Slightly darker shade of dark blue on hover */
+}
+
+.paymenform-edit {
+  text-align: center;
+  cursor: pointer;
+}

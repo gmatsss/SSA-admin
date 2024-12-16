@@ -1,0 +1,67 @@
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+.admin-container {
+  display: flex;
+  background-color: #f7f7f8;
+}
+
+.main-content {
+  flex-grow: 1;
+}
+
+.chat-toggle-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  background-image: url("./img/13botchat.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #000000;
+  background-color: #002060;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s;
+  z-index: 2;
+  padding: 10px;
+}
+
+.chat-toggle-button:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  transform: translateY(-4px);
+}
+
+.chat-toggle-button.chat-open {
+  display: none;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: linear-gradient(180deg, #f1f1f1, #e1e1e1);
+  border-radius: 6px;
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #888, #555);
+  border-radius: 6px;
+  border: 3px solid #f1f1f1;
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.3);
+  transition: background 0.3s, box-shadow 0.3s;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #555, #333);
+  box-shadow: inset 0 0 7px rgba(0, 0, 0, 0.5);
+}

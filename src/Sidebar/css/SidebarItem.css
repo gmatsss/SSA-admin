@@ -1,0 +1,134 @@
+/* SidebarItem.css */
+.sidebar-item {
+  display: flex;
+  align-items: center;
+  height: 40px;
+  text-decoration: none;
+}
+
+.img-container {
+  flex: 0 0 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  height: 100%;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  position: relative;
+  overflow: hidden;
+}
+
+.sidebar-item-text-container {
+  flex: 0 0 75%;
+  display: flex;
+  align-items: center;
+  padding: 7px;
+  font-weight: 700;
+  color: white;
+  font-size: 15px;
+}
+
+.sidebar-item:hover .img-container,
+.sidebar-item.active .img-container {
+  background-color: transparent;
+}
+
+.sidebar-item .img-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #db4f7c;
+  transition: width 0.5s ease;
+  z-index: 0;
+}
+
+.sidebar-item:hover .img-container::before,
+.sidebar-item.active .img-container::before {
+  width: 100%;
+}
+
+.sidebar-item .img-container img {
+  position: relative;
+  z-index: 1;
+}
+
+.sidebar-item:hover .sidebar-item-text-container,
+.sidebar-item.active .sidebar-item-text-container {
+  color: black;
+}
+
+.sidebar-item:hover,
+.sidebar-item.active {
+  background-color: rgb(255, 255, 255);
+}
+
+.sidebar-item img {
+  max-width: 100%;
+  height: auto;
+}
+
+.tooltip-sidebar {
+  display: none;
+}
+
+.sidebar-container.collapsed .sidebar-item:hover .tooltip-sidebar {
+  display: block;
+  position: absolute;
+  background-color: #000;
+  color: #fff;
+  padding: 5px;
+  border-radius: 4px;
+  font-size: 12px;
+  margin-left: 5px;
+}
+
+.icon-invert {
+  width: 45%;
+  height: auto;
+}
+
+.home-invert {
+  width: 45%;
+  height: auto;
+  filter: invert(100%);
+}
+
+.badge {
+  background: red;
+  border-radius: 50%;
+  padding: 4px 8px;
+  font-size: 14px;
+  margin-left: auto;
+}
+
+.collapsed-badge {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  width: 16px;
+  height: 16px;
+  font-size: 10px;
+  padding: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sidebar-container.collapsed .sidebar-item {
+  justify-content: center;
+}
+
+.sidebar-container.collapsed .img-container {
+  flex: 1;
+  justify-content: center;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+.sidebar-container.collapsed .sidebar-item-text-container {
+  display: none;
+}

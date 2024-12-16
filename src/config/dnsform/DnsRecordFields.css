@@ -1,0 +1,105 @@
+.dns-record {
+  margin-bottom: 24px;
+}
+
+.record-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.record-header h6 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #000;
+}
+
+.record-fields {
+  display: flex;
+  gap: 20px;
+}
+
+.record-field {
+  flex: 1;
+}
+
+.record-field label {
+  display: block;
+  font-weight: 700;
+  margin-bottom: 5px;
+  color: #001f54;
+}
+
+.input-container {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.input-container input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 4px;
+  font-size: 14px;
+  padding-right: 30px;
+  color: #333;
+}
+
+.copy-icon {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  font-size: 16px;
+  color: #00bfff;
+}
+
+.copy-icon:hover {
+  color: #009acd;
+}
+
+.tooltip-container {
+  position: relative;
+  display: inline-block;
+  margin-left: 5px;
+}
+
+.help-buttons {
+  background-color: transparent;
+  border: 2px solid #ff0000;
+  font-size: 15px;
+  color: #ff0000;
+  cursor: pointer;
+  border-radius: 50%;
+  width: 19px;
+  height: 19px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+}
+
+.tooltip-text {
+  visibility: hidden;
+  background-color: #a0a0a0;
+  color: #ffffff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 10px;
+  position: absolute;
+  z-index: 1;
+  top: -5px;
+  left: 110%;
+  opacity: 0;
+  transition: opacity 0.3s;
+  font-size: 12px;
+  pointer-events: none;
+  white-space: nowrap;
+}
+
+.tooltip-container:hover .tooltip-text {
+  visibility: visible;
+  opacity: 1;
+}

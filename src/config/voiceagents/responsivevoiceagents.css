@@ -1,0 +1,69 @@
+/* Responsive CSS for 1024px screen size */
+@media (max-width: 1024px) {
+  .VA-container {
+    flex-direction: column; /* Stack the items vertically */
+    align-items: center; /* Center the items */
+    padding: 15px;
+    max-height: 90vh; /* Adjust height for smaller screens */
+  }
+
+  .VA-bot-card {
+    flex: 0 0 calc(40% - 30px); /* Increase the width to 40% */
+    margin: 15px; /* Adjust margin for better spacing */
+  }
+
+  .VA-header {
+    padding: 15px; /* Reduce padding */
+    min-height: 120px; /* Adjust header height */
+  }
+
+  .VA-bot-content {
+    padding: 20px; /* Adjust padding */
+  }
+
+  .VA-bot-image {
+    width: 100px; /* Reduce image size */
+    height: 100px; /* Maintain square aspect ratio */
+    margin-bottom: 10px; /* Adjust margin */
+  }
+
+  .VA-bot-content h4 {
+    font-size: 20px; /* Adjust font size */
+    margin: 8px 0;
+  }
+
+  .VA-bot-content p {
+    font-size: 14px; /* Adjust font size */
+    margin: 5px 0;
+  }
+
+  .VA-bot-footer {
+    padding: 15px; /* Reduce padding */
+  }
+
+  .VA-agent-info p {
+    font-size: 14px; /* Reduce font size */
+    margin: 5px 0;
+  }
+
+  .VA-icon {
+    font-size: 48px; /* Reduce icon size */
+  }
+}
+
+/* Optional: Adjust for smaller screens (e.g., 768px) */
+@media (max-width: 768px) {
+  .VA-bot-card {
+    flex: 0 0 calc(80% - 30px); /* Increase the width to 80% for smaller screens */
+    margin: 10px;
+  }
+
+  .VA-bot-image {
+    width: 80px; /* Reduce image size further */
+    height: 80px;
+  }
+
+  .VA-icon {
+    font-size: 36px; /* Further reduce icon size */
+  }
+}

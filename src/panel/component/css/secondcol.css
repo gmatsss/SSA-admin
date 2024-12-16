@@ -1,0 +1,336 @@
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.top-row {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.bottom-row {
+  width: 100%;
+  max-width: 1200px;
+}
+
+.custom-card {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.custom-card {
+  flex: 1;
+  max-width: 200px;
+}
+
+.middle-row {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.left-column,
+.right-column {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.stat-title {
+  color: #000;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.stat-value {
+  color: #003366;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.chart-icon img {
+  width: 30px;
+  height: 30px;
+  opacity: 0.5;
+}
+
+.ssa-users-card,
+.new-signups-card {
+  position: relative;
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 200px;
+}
+
+.ssa-users-card::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: calc(100% - 40px);
+  height: 2px;
+  background: linear-gradient(to right, #003366, transparent);
+  border-radius: 10px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+.new-signups-card::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: calc(100% - 40px);
+  height: 2px;
+  background: linear-gradient(to right, #e63946, transparent);
+  border-radius: 10px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+.new-signups-card .stat-value {
+  color: #e63946;
+}
+
+.engagement-card {
+  flex: 1;
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  position: relative;
+}
+
+.engagement-fully-filled {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.circle-container-engagement {
+  width: 80px;
+  height: 80px;
+  transform: rotate(-90deg);
+}
+
+.circle-background-engagement {
+  fill: none;
+  stroke: #e6e6e6;
+  stroke-width: 8;
+}
+
+.circle-foreground-engagement {
+  fill: none;
+  stroke-width: 8;
+  stroke: #001f54;
+  stroke-dasharray: 220;
+  stroke-dashoffset: 0;
+}
+
+.circle-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+  z-index: 1;
+}
+
+.recent-activities {
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  max-height: 350px;
+  overflow-y: auto;
+  z-index: 1; /* Lower z-index to push it to the back */
+}
+
+.recent-activities::-webkit-scrollbar {
+  width: 8px;
+}
+
+.recent-activities::-webkit-scrollbar-thumb {
+  background-color: #ff0066;
+  border-radius: 10px;
+}
+
+.recent-activities::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+}
+
+.recent-activities-header {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.recent-activities-title {
+  font-size: 26px;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.notification-badge {
+  background-color: #ff0066;
+  color: #fff;
+  font-size: 12px;
+  font-weight: bold;
+  border-radius: 50%;
+  padding: 3px 7px;
+  margin-left: 5px;
+  transform: translateY(0);
+  z-index: 2;
+}
+
+.activity {
+  display: flex;
+  align-items: flex-start;
+  padding: 10px 0;
+  border-bottom: 1px solid #eaeaea;
+  list-style-type: disc;
+  list-style-position: inside;
+}
+
+.activity:last-child {
+  border-bottom: none;
+}
+
+.activity-avatar img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.activity-content {
+  flex: 1;
+  margin-left: 10px;
+}
+
+.activity-name {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 3px;
+  color: #cc0000;
+}
+
+.activity-details {
+  font-size: 14px;
+  color: #666;
+}
+
+.activity-time {
+  font-size: 12px;
+  color: #999;
+}
+
+.donut-chart {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.circle-container {
+  width: 80px;
+  height: 80px;
+  transform: rotate(45deg);
+}
+
+.circle-background {
+  fill: none;
+  stroke: #e6e6e6;
+  stroke-width: 8;
+}
+
+.circle-foreground {
+  fill: none;
+  stroke-width: 8;
+  stroke-dasharray: 220;
+  stroke-dashoffset: 55;
+  transition: stroke-dashoffset 0.5s ease;
+}
+
+.red {
+  stroke: #ff0066;
+}
+
+.blue {
+  stroke: #00ccff;
+}
+
+.circle-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+  z-index: 1;
+}
+
+.SSA-Users-Cards .stat-title,
+.New-Sign-Cards .stat-title,
+.engagement-card .stat-title {
+  color: #000;
+  font-size: 16px;
+}
+
+.SSA-Users-Cards .stat-value {
+  color: #003366;
+  font-size: 24px;
+}
+
+.New-Sign-Cards .stat-value {
+  color: #cc0000;
+  font-size: 24px;
+}
+
+.engagement-card .stat-value {
+  font-size: 36px;
+  font-weight: bold;
+  color: #003366;
+  text-align: center;
+}

@@ -1,0 +1,40 @@
+.onerow {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.firstcol {
+  flex: 1.3; /* Increase this value to give FirstCol more space */
+  margin: 10px;
+}
+
+.secondcol {
+  flex: 1; /* Keep this value smaller to give FirstCol more space */
+}
+
+@media (max-width: 1024px) {
+  .onerow {
+    flex-direction: column; /* Stack items vertically */
+    padding: 10px; /* Adjust padding for smaller screens */
+  }
+
+  .firstcol,
+  .secondcol {
+    flex: 1; /* Make both columns take up full width */
+    margin: 10px 0; /* Adjust margin for vertical stacking */
+  }
+}
+
+@media (max-width: 768px) {
+  .onerow {
+    flex-direction: column; /* Stack items vertically */
+    padding: 10px; /* Adjust padding for smaller screens */
+  }
+
+  .firstcol,
+  .secondcol {
+    flex: 1; /* Make both columns take up full width */
+    margin: 10px 0; /* Adjust margin for vertical stacking */
+  }
+}

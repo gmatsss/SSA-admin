@@ -1,0 +1,53 @@
+/* LogoutButton.css */
+.logout-button {
+  background-color: transparent;
+  border: none;
+  color: white;
+  text-align: left;
+  font-size: 16px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  width: 100%;
+  cursor: pointer;
+  border-radius: 20px;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+  justify-content: flex-start;
+}
+
+.logout-button img {
+  margin-right: 10px;
+  width: 16px;
+  height: auto;
+}
+
+.logout-button span {
+  flex: 1;
+  margin-left: 20px;
+}
+
+.logout-button:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.sidebar-item.logout-button {
+  padding: 10px 15px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  background-color: #0b1442;
+  margin-left: 20px;
+}
+
+.sidebar-container.collapsed .logout-button {
+  justify-content: start;
+}
+
+.sidebar-container.collapsed .logout-button img {
+  margin-right: 0;
+}
+
+.sidebar-container.collapsed .logout-button span {
+  display: none;
+}

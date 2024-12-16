@@ -1,0 +1,263 @@
+.buy-bot-container {
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.buy-bot-header {
+  background-color: #092a51;
+  color: #fff;
+  padding: 15px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  text-align: start;
+  margin-bottom: 20px;
+}
+
+.buy-bot-subscription {
+  padding: 10px;
+  position: relative;
+}
+
+.buy-bot-select {
+  width: 100%;
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #000000;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  color: #000;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  position: relative;
+  background-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"%3E%3Cpolyline points="6 9 12 15 18 9"%3E%3C/polyline%3E%3C/svg%3E');
+  background-repeat: no-repeat;
+  background-position: right 10px top 50%;
+  background-size: 16px;
+}
+
+.buy-bot-select::after {
+  content: "";
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+.buy-bot-select select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.buy-bot-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 10px;
+}
+
+.buy-bot-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.buy-bot-group {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.buy-bot-label {
+  color: #dd2c54;
+  font-weight: bold;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.buy-bot-input,
+.buy-bot-textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 14px;
+  color: #333;
+  border: 1px solid #000000;
+}
+
+.buy-bot-textarea {
+  min-height: 100px;
+}
+
+.buy-bot-upload {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 20px;
+  border: 2px dashed #000000;
+  border-radius: 10px;
+  text-align: center;
+  cursor: pointer;
+  height: 150px;
+}
+
+.buy-bot-input-file {
+  display: none;
+}
+
+.buy-bot-upload-text {
+  color: #666;
+}
+
+.buy-bot-container-button {
+  display: flex;
+  justify-content: center;
+}
+
+.buy-bot-submit {
+  background-color: #00a8ff;
+  color: #fff;
+  padding: 15px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  width: 40%;
+  text-align: center;
+}
+
+.buy-bot-count-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.buy-bot-count-button {
+  background-color: #092a51;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  width: 30px;
+  height: 30px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.buy-bot-count {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+}
+
+.basic-multi-select {
+  padding: 1px;
+  border-radius: 10px;
+  font-size: 14px;
+  color: #333;
+  border: 1px solid #000000;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.select__menu {
+  border: none;
+  box-shadow: none;
+  background-color: white;
+}
+
+.select__option {
+  background-color: white;
+  color: #333;
+}
+
+.select__option--is-selected {
+  background-color: #007bff;
+  color: white;
+}
+
+.select__option--is-focused {
+  background-color: #f1f1f1;
+  color: #333;
+}
+
+.select__placeholder {
+  color: #888;
+}
+
+.select__multi-value {
+  background-color: #e1e1e1;
+  border-radius: 4px;
+  padding: 2px 5px;
+}
+
+.select__multi-value__label {
+  color: #333;
+}
+
+.select__multi-value__remove {
+  color: #333;
+  cursor: pointer;
+}
+
+.select__multi-value__remove:hover {
+  background-color: #ccc;
+  color: #000;
+}
+
+.select__indicator-separator {
+  display: none;
+}
+
+.select__dropdown-indicator {
+  display: none;
+}
+
+.buy-bot-warning {
+  color: #dda52c;
+  font-size: 14px;
+}
+
+.channeldiv-select {
+  display: flex;
+  justify-content: space-between;
+}
+
+.buy-bot-file-list {
+  display: flex;
+  gap: 10px;
+}
+
+.buy-bot-file-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f9f9f9;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #e0e0e0;
+}
+
+.buy-bot-file-item span {
+  font-size: 14px;
+  color: #333;
+}
+
+.buy-bot-file-remove {
+  background: none;
+  border: none;
+  color: #ff4d4d;
+  font-size: 18px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.buy-bot-file-remove:hover {
+  color: #e60000;
+}

@@ -1,0 +1,9 @@
+.login {
+  background-image: url("./img/loginbg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: auto; /* You can set a specific height if needed */
+  width: 100%;
+  display: block;
+}

@@ -1,0 +1,130 @@
+/* Sidebar.css */
+.sidebar-container {
+  display: flex;
+  align-items: start;
+  font-family: "Roboto", sans-serif;
+  position: relative;
+  width: 320px;
+  transition: width 0.3s ease-in-out;
+  padding: 15px;
+}
+
+.sidebar-container.collapsed {
+  width: 125px;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  height: 96vh;
+  width: 320px;
+  background-color: #0d1440;
+  color: white;
+  transition: width 0.3s ease-in-out;
+  overflow-x: hidden;
+  border-radius: 40px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  margin-left: 10px;
+  margin-top: 5px;
+}
+
+.sidebar.collapsed {
+  width: 125px;
+}
+
+.sidebar-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.logo-sidebar {
+  width: 180px;
+  transition: width 0.3s ease, height 0.3s ease;
+}
+
+.sidebar-container.collapsed .logo-sidebar {
+  width: 80px;
+  height: auto;
+  transition: width 0.3s ease, height 0.3s ease;
+}
+
+.sidebar-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding-top: 10px;
+  width: 100%;
+}
+
+.sidebar-toggle-button {
+  position: absolute;
+  top: 30px;
+  right: -23px;
+  background-color: #ff335b;
+  color: #ffffff;
+  border: none;
+  font-size: 16px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, right 0.3s ease;
+}
+
+.sidebar-toggle-button:hover {
+  background-color: #ffffff;
+  color: #ff335b;
+}
+
+@media (max-width: 768px) {
+  .sidebar-container {
+    width: 80px;
+  }
+
+  .sidebar-container.expanded {
+    width: 250px;
+  }
+
+  .sidebar-button {
+    display: none;
+  }
+}
+
+@media (max-width: 1024px) {
+  .sidebar {
+    height: 120vh;
+  }
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    height: 120vh;
+  }
+}
+
+@media (max-width: 480px) {
+  .sidebar {
+    height: 120vh;
+  }
+}
+
+@media (max-width: 1440px) {
+  .sidebar {
+    height: 120vh;
+  }
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    height: 120vh;
+  }
+}
+
+@media (max-width: 480px) {
+  .sidebar {
+    height: 120vh;
+  }
+}

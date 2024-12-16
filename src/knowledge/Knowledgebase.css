@@ -1,0 +1,43 @@
+.knowledgebase-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+
+  margin-top: 30px;
+}
+
+.knowledgebase-header {
+  background-color: #0d1a53;
+  padding: 20px;
+  border-radius: 8px 8px 0 0;
+  color: white;
+  text-align: left;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.subtitle {
+  font-size: 16px;
+  margin: 5px 0 0;
+}
+
+.knowledgebase-video {
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.video-player {
+  width: 100%;
+  max-width: 1000px;
+  height: auto;
+  border-radius: 8px;
+}

@@ -1,0 +1,203 @@
+@media (max-width: 1024px) {
+  .header_small {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch; /* Allow full width alignment */
+  }
+
+  .header_left {
+    display: none; /* Hide the header_left */
+  }
+
+  .header_right {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Align title on the left and user details on the right */
+    gap: 10px;
+  }
+
+  .header_center {
+    width: 100%;
+    order: 1;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .header_center .search_input_wrapper {
+    width: 100%;
+    height: 40px;
+  }
+
+  .header_center .search_icon {
+    font-size: 18px;
+  }
+
+  .header_center .search_input {
+    padding-left: 35px;
+    font-size: 13px;
+  }
+
+  .notification_bell {
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .notification_bell .bell_icon {
+    font-size: 20px;
+  }
+
+  .user_avatar {
+    width: 30px;
+    height: 30px;
+  }
+
+  .user_name {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header_small {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    padding: 0 10px; /* Add some padding to ensure the content doesn't touch the edges */
+  }
+
+  .header_left {
+    display: none; /* Hide the header_left */
+  }
+
+  .header_right {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Align title on the left and user details on the right */
+    gap: 5px; /* Reduce the gap between the elements */
+  }
+
+  .header_center {
+    width: 100%;
+    order: 1;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .header_center .search_input_wrapper {
+    width: 100%;
+    height: 35px; /* Reduce the height of the search input wrapper */
+  }
+
+  .header_center .search_icon {
+    font-size: 16px; /* Reduce the size of the search icon */
+  }
+
+  .header_center .search_input {
+    padding-left: 30px; /* Adjust padding for the smaller input */
+    font-size: 12px; /* Reduce the font size */
+  }
+
+  .notification_bell {
+    width: 30px; /* Reduce the width of the notification bell */
+    height: 30px; /* Reduce the height of the notification bell */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .notification_bell .bell_icon {
+    font-size: 18px; /* Reduce the size of the bell icon */
+  }
+
+  .user_avatar {
+    width: 28px; /* Reduce the avatar size */
+    height: 28px; /* Ensure the avatar is proportionally smaller */
+  }
+
+  .user_name {
+    font-size: 12px; /* Reduce the font size of the username */
+  }
+
+  .suggestions_dropdown {
+    max-height: 150px; /* Set a maximum height for the dropdown */
+    overflow-y: auto; /* Enable scrolling in case of many suggestions */
+  }
+}
+
+@media (max-width: 480px) {
+  .header_left h1 {
+    font-size: 18px;
+    line-height: 18px;
+  }
+
+  .header_center .search_input_wrapper {
+    width: 100%;
+    height: 35px;
+  }
+
+  .header_center .search_icon {
+    font-size: 16px;
+  }
+
+  .header_center .search_input {
+    padding-left: 30px;
+    font-size: 11px;
+  }
+
+  .notification_bell {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .notification_bell .bell_icon {
+    font-size: 18px;
+  }
+
+  .user_avatar {
+    width: 28px;
+    height: 28px;
+  }
+
+  .user_name {
+    font-size: 12px;
+  }
+
+  .header_left,
+  .header_right {
+    flex: 1;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 8px;
+    align-items: center;
+  }
+
+  .header_right {
+    justify-content: flex-end;
+    gap: 10px;
+  }
+
+  .header_center {
+    width: 100%;
+    order: 2;
+  }
+
+  .custom_dropdown div,
+  .custom_dropdown button {
+    font-size: 13px;
+    padding: 7px 10px;
+  }
+
+  .suggestion_item {
+    font-size: 13px;
+    padding: 7px 10px;
+  }
+}

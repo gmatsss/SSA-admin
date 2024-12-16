@@ -1,0 +1,52 @@
+/* General Donut Fill Animation */
+@keyframes donutFill {
+  0% {
+    stroke-dashoffset: 220;
+  }
+  100% {
+    stroke-dashoffset: 55;
+  }
+}
+
+.donut-chart .circle-foreground {
+  animation: donutFill 2s ease-in-out forwards;
+}
+
+/* Specific animation for Engagement Donut */
+@keyframes engagementDonutFill {
+  0% {
+    stroke-dashoffset: 220;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+.engagement-fully-filled .circle-foreground-engagement {
+  animation: engagementDonutFill 2s ease-in-out forwards;
+}
+
+@keyframes barFill {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 80%;
+  }
+}
+
+.ssa-users-card::after,
+.new-signups-card::after {
+  animation: barFill 2s ease-in-out forwards;
+}
+
+@keyframes fillColor {
+  0% {
+    transform: scaleX(0);
+    transform-origin: left;
+  }
+  100% {
+    transform: scaleX(1);
+    transform-origin: left;
+  }
+}

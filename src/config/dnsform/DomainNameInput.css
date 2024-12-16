@@ -1,0 +1,79 @@
+.domain-container {
+  margin: auto;
+  padding: 20px; /* Reduced padding to decrease height */
+  border-radius: 12px 12px 0 0; /* Rounded top-left and top-right corners only */
+  box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.1);
+  background-color: #001f54;
+  max-width: 1500px;
+}
+
+.domain-header {
+  padding: 12px; /* Reduced padding */
+  color: white;
+  text-align: left;
+  background-color: transparent;
+}
+
+.domain-header h2 {
+  margin: 0;
+  font-weight: bold;
+}
+
+.domain-box {
+  padding: 12px; /* Reduced padding */
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  text-align: left;
+}
+
+.domain-box h3 {
+  margin-bottom: 6px; /* Reduced margin */
+  font-weight: bold;
+  color: #000;
+}
+
+.domain-box p {
+  margin-bottom: 8px; /* Reduced margin */
+  color: #000;
+}
+
+.domain-input {
+  width: 100%;
+  padding: 8px; /* Reduced padding for input */
+  margin-bottom: 8px; /* Reduced margin */
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.domain-input.input-error {
+  border-color: red;
+}
+
+.error-text {
+  color: red;
+  font-size: 12px;
+  margin-bottom: 12px; /* Reduced margin */
+}
+
+.Domainsubmits-button {
+  padding: 8px 16px; /* Reduced padding */
+  background-color: #00aaff;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: block; /* Makes the button block-level */
+  margin: 0 auto; /* Centers the button horizontally */
+}
+
+.submit-button:hover {
+  background-color: #008fcc;
+}
+
+.submit-button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}

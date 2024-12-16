@@ -1,0 +1,92 @@
+.api-key-form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 88vh; /* Full viewport height */
+}
+
+.api-key-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%; /* Ensure the form takes full width on small screens */
+  max-width: 1000px; /* Adjusted width for a centered and more compact form */
+  padding: 0;
+  border-radius: 16px;
+  box-shadow: 0 12px 24px 0 rgba(0, 0, 0, 0.15);
+  background-color: #fff; /* Set background to white */
+  border: 1px solid #d0d0d0;
+  overflow: hidden;
+}
+
+.form-header {
+  background-color: #001f54;
+  padding: 24px;
+  color: white;
+  text-align: center;
+}
+
+.form-header h4 {
+  font-weight: bold;
+  margin: 0;
+}
+
+.form-header p {
+  margin-top: 8px;
+  color: #ddd;
+}
+
+.form-body {
+  padding: 24px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  color: #000; /* Change label text color to black */
+  margin-bottom: 8px;
+  font-weight: 700;
+}
+
+.form-group input {
+  background-color: #fff; /* Ensure the background is white */
+  color: #000; /* Set the text color to black */
+  padding: 12px;
+  border: 1px solid black;
+  border-radius: 8px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.form-group input:focus {
+  border-color: #1976d2;
+}
+
+.form-footer {
+  padding: 24px;
+  text-align: center;
+  background-color: #fff; /* Change the background to white for consistency */
+}
+
+.save-button {
+  padding: 12px 0;
+  background-color: #00bfff;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.3s ease;
+}
+
+.save-button:hover {
+  background-color: #009acd;
+}

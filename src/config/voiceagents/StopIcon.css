@@ -1,0 +1,78 @@
+.stop-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.sound-wave {
+  width: 3px;
+  background-color: #002060; /* Start with the base color */
+  display: block;
+  border-radius: 1px;
+  margin: 0 3px;
+  animation: colorFill 1.5s infinite ease-in-out;
+}
+
+.medium {
+  height: 25px;
+}
+
+.large {
+  height: 35px;
+}
+
+.small {
+  height: 15px;
+}
+
+.xsmall {
+  height: 10px;
+}
+
+.stop-symbol {
+  width: 30px;
+  height: 30px;
+  background-color: #f11818;
+  display: block;
+  border-radius: 4px;
+  margin: 0 10px;
+}
+
+/* Color filling animation keyframes */
+@keyframes colorFill {
+  0%,
+  100% {
+    background-color: #002060; /* Base color */
+  }
+  50% {
+    background-color: #50eb20; /* Fill color */
+  }
+}
+
+/* Reverse animation delays for left and right waves */
+.sound-wave.left.medium {
+  animation-delay: 0.4s;
+}
+.sound-wave.left.large {
+  animation-delay: 0.3s;
+}
+.sound-wave.left.small {
+  animation-delay: 0.2s;
+}
+.sound-wave.left.xsmall {
+  animation-delay: 0.1s;
+}
+
+.sound-wave.right.xsmall {
+  animation-delay: 0.1s;
+}
+.sound-wave.right.small {
+  animation-delay: 0.2s;
+}
+.sound-wave.right.large {
+  animation-delay: 0.3s;
+}
+.sound-wave.right.medium {
+  animation-delay: 0.4s;
+}

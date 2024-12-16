@@ -1,0 +1,253 @@
+@media only screen and (max-width: 1024px) {
+  .welcome-section {
+    padding: 12px;
+    margin-bottom: 16px;
+  }
+
+  .welcome-text h1 {
+    font-size: 22px;
+  }
+
+  .welcome-text p {
+    font-size: 13px;
+  }
+
+  .welcome-buttons {
+    margin-top: 12px;
+  }
+
+  .start-training-btn,
+  .submit-ticket-btn {
+    padding: 7px 16px;
+    margin-right: 7px;
+    font-size: 13px;
+  }
+
+  .welcome-image img {
+    max-width: 280px;
+  }
+
+  .support-info {
+    padding: 12px;
+    margin-bottom: 16px;
+  }
+
+  .title-support {
+    font-size: 16px;
+    margin-bottom: 6px;
+  }
+
+  .support-item {
+    font-size: 14px;
+    padding: 9px;
+    margin-right: 7px;
+  }
+
+  .support-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 7px;
+  }
+
+  .quick-start {
+    max-height: 320px;
+  }
+
+  .quick-start-header {
+    padding: 12px;
+  }
+
+  .quick-start-title {
+    font-size: 26px;
+  }
+
+  .quick-start-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+
+  .quick-start-item h3 {
+    font-size: 15px;
+    margin-bottom: 7px;
+  }
+
+  .quick-start-item p {
+    font-size: 12px;
+    margin-bottom: 16px;
+  }
+
+  .quick-start-button {
+    padding: 7px 0;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 768px) {
+  .welcome-section {
+    padding: 12px; /* Adjusted padding */
+    margin-bottom: 15px;
+  }
+
+  .welcome-content {
+    flex-direction: column; /* Stack the image and text vertically */
+    text-align: center; /* Center the text */
+  }
+
+  .welcome-text {
+    margin-left: 0; /* Remove margin for better centering */
+    margin-top: 12px; /* Add margin on top */
+  }
+
+  .welcome-text h1 {
+    font-size: 22px; /* Slightly smaller font */
+  }
+
+  .welcome-text p {
+    font-size: 14px;
+  }
+
+  .start-training-btn,
+  .submit-ticket-btn {
+    padding: 8px 16px; /* Reduce padding */
+    font-size: 14px; /* Adjust font size */
+    margin-right: 8px; /* Reduce margin */
+  }
+
+  .welcome-image img {
+    max-width: 100%; /* Image takes full width */
+  }
+
+  .support-info {
+    padding: 12px; /* Adjusted padding */
+  }
+
+  .title-support {
+    font-size: 18px; /* Smaller title */
+  }
+
+  .support-details {
+    flex-direction: column; /* Stack support items vertically */
+  }
+
+  .support-item {
+    font-size: 14px; /* Adjust font size */
+    padding: 10px; /* Reduce padding */
+    margin-bottom: 10px; /* Add bottom margin for spacing */
+    margin-right: 0; /* Remove right margin */
+  }
+
+  .support-icon {
+    width: 20px; /* Smaller icon */
+    height: 20px;
+  }
+
+  .quick-start-container {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns instead of 4 */
+    gap: 12px; /* Adjust gap between items */
+  }
+
+  .quick-start-item {
+    padding: 15px; /* Reduce padding */
+  }
+
+  .quick-start-title {
+    font-size: 26px; /* Smaller title */
+  }
+
+  .quick-start-item h3 {
+    font-size: 16px; /* Adjust font size */
+  }
+
+  .quick-start-item p {
+    font-size: 12px; /* Smaller font for descriptions */
+  }
+
+  .quick-start-button {
+    padding: 8px 0; /* Adjust button padding */
+    font-size: 13px; /* Smaller font */
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .welcome-section {
+    padding: 8px;
+    margin-bottom: 12px;
+  }
+
+  .welcome-text h1 {
+    font-size: 18px;
+  }
+
+  .welcome-text p {
+    font-size: 11px;
+  }
+
+  .welcome-buttons {
+    margin-top: 8px;
+  }
+
+  .start-training-btn,
+  .submit-ticket-btn {
+    padding: 5px 12px;
+    margin-right: 5px;
+    font-size: 11px;
+  }
+
+  .welcome-image img {
+    max-width: 220px;
+  }
+
+  .support-info {
+    padding: 8px;
+    margin-bottom: 12px;
+  }
+
+  .title-support {
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+
+  .support-item {
+    font-size: 12px;
+    padding: 7px;
+    margin-right: 5px;
+  }
+
+  .support-icon {
+    width: 16px;
+    height: 16px;
+    margin-right: 5px;
+  }
+
+  .quick-start {
+    max-height: 280px;
+  }
+
+  .quick-start-header {
+    padding: 8px;
+  }
+
+  .quick-start-title {
+    font-size: 22px;
+  }
+
+  .quick-start-container {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+
+  .quick-start-item h3 {
+    font-size: 13px;
+    margin-bottom: 5px;
+  }
+
+  .quick-start-item p {
+    font-size: 10px;
+    margin-bottom: 12px;
+  }
+
+  .quick-start-button {
+    padding: 5px 0;
+    font-size: 10px;
+  }
+}
